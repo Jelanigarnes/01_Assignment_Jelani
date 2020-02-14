@@ -149,8 +149,8 @@ function setupCamera() {
 
 function createSun() {
     sun = new THREE.PointLight(0xFFFFFF, 2, 0,2);
-    let sunGeometry = new THREE.SphereBufferGeometry(30000, 32, 50);
-    let sunMaterial = new THREE.MeshBasicMaterial({ color: 0xFDA50F });
+    let sunGeometry = new THREE.SphereGeometry(30000, 32, 50);
+    let sunMaterial = new THREE.MeshLambertMaterial({ color: 0xFFCC33 });
     sun.add(new THREE.Mesh( sunGeometry, sunMaterial));
     scene.add(sun);
     sun.add(mercuryOrbit);
