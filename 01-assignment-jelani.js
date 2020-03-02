@@ -192,7 +192,7 @@ function createEarth(){
     earth = new THREE.Mesh(geometry,material);
 
     earth.position.x=(sun.position.x + 149600);
-    //scene.add(earth);
+    scene.add(earth);
     earthOrbit.add(earth);
     createMoons("Earth",earth,1,earthMoonOrbit);
     createRing((sun.position.x+149600));
